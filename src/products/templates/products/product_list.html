@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Catalogue</title>
+{% endblock %}
+
+{% block content %}
+
+    <h1>Catalogue Mercadona</h1>
+    {% for product in product_list %}
+    <article>
+<!--        <section class="product_image">{{ product.image }}</section>-->
+        <h2>{{ product.name }}</h2>
+        <h3>{{ product.description }}</h3>
+<!--        Insérer une condition pour vérifier si promotion, si oui ajouter à l'élément h3 la classe .sales-->
+        <h3>{{ product.price }}</h3>
+    </article>
+    <!--    Optionnel, pas demandé par le client-->
+    <!--    <form action="{% url 'delete_product' %}}" method="POST">-->
+    <!--        {% csrf_token %}-->
+    <!--        <input type="hidden" name="name">-->
+    <!--        <button type="submit">Supprimer</button>-->
+    <!--    </form>-->
+    {% endfor %}
+        <!-- Use category elsewhere then ! -->
+
+{% endblock %}

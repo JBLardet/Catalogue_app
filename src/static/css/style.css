@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+:root {
+    --brand-color: #229e6b;
+}
+
+.sales {
+    color: red;
+    font-weight: bold;
+}
+
+body {
+    background-color: lightgray;
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar {
+    color: var(--brand-color);
+    padding: 1rem;
+}
